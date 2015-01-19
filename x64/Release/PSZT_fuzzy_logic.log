@@ -1,6 +1,0 @@
-﻿  main.cpp
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-     Creating library H:\codes\PSZT_fuzzy_logic\x64\Release\PSZT_fuzzy_logic.lib and object H:\codes\PSZT_fuzzy_logic\x64\Release\PSZT_fuzzy_logic.exp
-  Generating code
-  Finished generating code
-  PSZT_fuzzy_logic.vcxproj -> H:\codes\PSZT_fuzzy_logic\x64\Release\PSZT_fuzzy_logic.exe
