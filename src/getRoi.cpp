@@ -68,7 +68,6 @@ static void detecting(Mat& img, Rect rect)
 	}
 }
 
-
 static void drawAndSave(Mat& img, Rect rect){
 	Mat roi(imageClear, selection);
 	rectangle(image, selection, CV_RGB(0, 0, 255), 2);
@@ -95,13 +94,13 @@ static void stDevAndMean(Mat& img, Rect rect){
 	parameters.push_back(meanAndStdParameters);
 }
 
-
 void GetRoi::run(){
 	m_img.copyTo(image);
 	m_img.copyTo(imageClear);
 	Mat temp;
 	Rect lastRect;
 	namedWindow("Window", 0);
+	//moveWindow("Window", 10, 10);
 	setMouseCallback("Window", onMouse, 0);
 	for (;;)
 	{
@@ -137,7 +136,6 @@ GetRoi::GetRoi(Mat &img, vector<LearnData> data){
 	classDecision.setParameters(data);
 	toDetect = true;
 }
-
 
 vector<vector<float>> GetRoi::getParameters()
 {
